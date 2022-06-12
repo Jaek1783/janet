@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+.App{
+    width:1900px;
+    padding:0;
+    margin:0 auto;
+    font-size: 12px;
+    font-family: 'noto sans kr';
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+    width:1250px;
+    margin:0 auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo{
+    padding-right:1.5em;
+    float: left;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+div.search{
+    width:400px;
+    border:2px solid #000;
+    z-index: 3;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 40px;
+    line-height: 35px;
+    display: inline-block;
+    box-sizing: border-box;
 }
-
-.App-link {
-  color: #61dafb;
+div.allSearch{
+    float: left;
+    width: 100px;
+    padding: 0 10px 0 25px;
+    margin: 0;
+    height: 35px;
+    line-height: 36px;
+    font-size: 14px;
+    box-sizing: border-box;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type=text]{
+    float: left;
+    width: 230px;
+    height: 33px;
+    padding-left: 0;
+    background: #fff;
+    border: 0;
+    font-size: 14px;
+    outline: none;
+}
+.login_container{
+    display: inline-block;
+    float:right;
+}
+.login{
+    display: flex;
+}
+.login>li{
+    margin-right:20px;
 }
