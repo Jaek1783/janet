@@ -1,28 +1,53 @@
+*{
+    padding:0;
+    margin:0;
+}
 .App{
     width:1900px;
-    padding:0;
     margin:0 auto;
     font-size: 12px;
     font-family: 'noto sans kr';
+    box-sizing: border-box;
+    padding-top:90px;
+}
+img{
+    width:100%;
+}
+dl,ul,ol,li{
+    list-style-type: none;
+    
+}
+a{
+    text-decoration: none;
+    color:inherit;
 }
 .header{
+    /* width:1250px;
+    margin:0 auto; */
+    padding-top:15px;
+    border-bottom:1px solid #dfdfdf;
+}
+.hd{
     width:1250px;
     margin:0 auto;
+    height:55px;
 }
 .logo{
-    padding-right:1.5em;
     float: left;
+    margin: 0 30px 3px 0;
 }
 div.search{
     width:400px;
-    border:2px solid #000;
+    border:2px solid transparent;
     z-index: 3;
     height: 40px;
-    margin-top: 15px;
     border-radius: 40px;
     line-height: 35px;
     display: inline-block;
     box-sizing: border-box;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #9463ee 0%,  #9da7f8 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 }
 div.allSearch{
     float: left;
@@ -44,13 +69,221 @@ input[type=text]{
     font-size: 14px;
     outline: none;
 }
+input[type=text]:focus::placeholder{
+    color:#9463ee;
+    font-weight: bold;
+}
+button.searchBtn{
+    float: right;
+    border: 0;
+    cursor: pointer;
+    background: none;
+    line-height: initial;
+    width: 30px;
+    height: 30px;
+    margin:3px;
+}
+/* 로그인 버튼 스타일 */
 .login_container{
     display: inline-block;
     float:right;
 }
+.loginBox{
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    color:#919191;
+}
+.loginBox>li{
+    margin-right:20px;
+}
+.icon{
+    padding-top:30px;
+}
+.icon:hover{
+    color:#9463ee;
+}
+.join{
+    background: no-repeat center 0 url('./img/icon/header/member.webp');
+}
 .login{
+    background: no-repeat center 0 url('./img/icon/header/login.webp');
+}
+.service{
+    background: no-repeat center 0 url('./img/icon/header/company.webp');
+}
+.join:hover{
+    background: no-repeat center 0 url('./img/icon/header/member_ov.webp');
+}
+.login:hover{
+    background: no-repeat center 0 url('./img/icon/header/login_ov.webp');
+}
+.service:hover{
+    background: no-repeat center 0 url('./img/icon/header/company_ov.webp');
+}
+
+/* nav 스타일 */
+.gnb_wrap{
+    width:1250px;
+    margin:0 auto;
+    display:flex;
+    line-height: 65px;
+    height:75px;
+    justify-content: space-between;
+}
+.gnb{
+    display:flex;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0;
+}
+.gnb_text{
+    font-family: 'noto sans kr', 'malgun gothic', 'dotum', sans-serif;
+    padding: 0 5px;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+    width: 100px;
+    box-sizing: border-box;
+    line-height: 65px;
+}
+.gnb_item>a:hover{
+    color:#9463ee;
+}
+.hamburgerBtn{
+    border:none;
+    width:55px;
+    height:55px;
+    box-sizing: border-box;
+    background: no-repeat center 0 url('./img/icon/header/gnb.png');
+    background-size: 95%;
+}
+.hamburgerBtn:hover{
+ cursor: pointer;
+}
+.gnb_item:nth-child(5) a:hover{
+    text-indent:-9999px;
+    color:transparent;
+    background:url('./img/icon/header/gnbInfo.webp') no-repeat 0 -3px;
+    background-size: 55px;
+}
+.gnb_item:nth-child(6) a:hover{
+    text-indent:9999px;
+    width:100px;
+    color:transparent;
+    background:url('./img/icon/header/gnbTalk.webp') no-repeat 0 -3px;
+    background-size: 40px;
+}
+
+/* 서브gnb 스타일 */
+.subGnb{
     display: flex;
 }
-.login>li{
-    margin-right:20px;
+.sub_item{
+    font-family: 'noto sans kr', 'malgun gothic', 'dotum', sans-serif;
+    font-size: 16px;
+    padding:0 10px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+}
+.aca{
+    padding-top:3px;
+}
+.sub_item>span{
+    display: inline-block;
+    text-indent: -9999px;
+}
+
+
+/* section01  */
+div.section01{
+    width:100%;
+    padding:55px 0;
+    background-color: #eceafc;
+}
+div.contents{
+    display:flex;
+    width:1250px;
+    margin:0 auto;
+
+}
+.content01{
+    width:400px;
+    overflow: hidden;
+    margin-right:10px;
+    position:relative;
+}
+.slides{
+    width:400%;
+    display: flex;
+    align-items: center;
+}
+.eventPage{
+    position:absolute;
+    right:20px;
+    bottom:10px;
+    color:#fff;
+
+}
+
+/* 콘텐츠 02 */
+.content02{
+    width: 550px;
+    background: #fff;
+    margin-right: 10px;
+    padding: 30px 30px 0;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+}
+.magazine_container{
+    width:490px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.magazines{
+    width:600%;
+    display: flex;
+}
+.magazine{
+    width: 490px;
+    height:300px;
+    margin-right: 10px;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+}
+.info{
+    display: flex;
+	flex-wrap: wrap;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+.info_items{
+    flex: 1 1 40%;
+    padding: 10px 20px;
+    width: 230px;
+    line-height: 20px;
+}
+.info_item{
+    display: flex;
+}
+.info_text{
+    width: 95px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.info_text>h3{
+    margin-bottom: 5px;
+    font-size: 16.38px;
+    white-space: pre-wrap;
+}
+.info_text>p{
+    white-space: pre-wrap;
+    font-size: 14px;
 }
