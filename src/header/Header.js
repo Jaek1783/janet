@@ -25,7 +25,7 @@ const Header = ()=> {
             <div className='search'>
               <div className='allSearch'>통합검색</div>
               <input type="text" placeholder='자격증 꿀팁 보러가기 #취준 #취뽀' maxLength='50'/>
-              <button className='searchBtn' ><img src={search} alt="검색버튼"/></button>
+              <button className='searchBtn' ><img src={require('./../img/icon/header/searchBtn.png')} alt="검색버튼"/></button>
             </div>
             <div className='login_container'>
               <ul className='loginBox'>
