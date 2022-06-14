@@ -6,13 +6,13 @@ const MainEventSlides = (props)=>{
         <ul className='slides'>
           {props.mainSlides.map(mainSlide=>{
             return(
-              <li key={mainSlide.id}>
+              <li key={mainSlide.id} className="slide">
                 <img src={mainSlide.img} alt={mainSlide.alt} />
               </li>
             )
           })}
         </ul>
-        <p className="eventPage">/</p>
+        <p className="eventPage">1/4</p>
       </div>
     )
 }; export default MainEventSlides;
