@@ -42,10 +42,10 @@ import Keyword from './Section03/Keyword';
 
 const App=()=> {
   const mainSlides = [
-    {id:1,img:mainImg01,alt:'메인슬라이드이미지01'},
-    {id:2,img:mainImg02,alt:'메인슬라이드이미지02'},
-    {id:3,img:mainImg03,alt:'메인슬라이드이미지03'},
-    {id:4,img:mainImg04,alt:'메인슬라이드이미지04'},
+    {id:1,img:MainImg01,alt:'메인슬라이드이미지01'},
+    {id:2,img:MainImg02,alt:'메인슬라이드이미지02'},
+    {id:3,img:MainImg03,alt:'메인슬라이드이미지03'},
+    {id:4,img:MainImg04,alt:'메인슬라이드이미지04'},
   ];
   const informations = [
     {name:'icon01',img:magazine_icon01,title:'자넷매거진',body:'다양한 자격증 \n매거진'},
