@@ -111,19 +111,19 @@ button.searchBtn{
     background: no-repeat center 0 url('./img/icon/header/member.png');
 }
 .login{
-    background: no-repeat center 0 url('./img/icon/header/login.webp');
+    background: no-repeat center 0 url('./img/icon/header/login.png');
 }
 .service{
-    background: no-repeat center 0 url('./img/icon/header/company.webp');
+    background: no-repeat center 0 url('./img/icon/header/company.png');
 }
 .join:hover{
-    background: no-repeat center 0 url('./img/icon/header/member_ov.webp');
+    background: no-repeat center 0 url('./img/icon/header/member_ov.png');
 }
 .login:hover{
-    background: no-repeat center 0 url('./img/icon/header/login_ov.webp');
+    background: no-repeat center 0 url('./img/icon/header/login_ov.png');
 }
 .service:hover{
-    background: no-repeat center 0 url('./img/icon/header/company_ov.webp');
+    background: no-repeat center 0 url('./img/icon/header/company_ov.png');
 }
 
 /* nav 스타일 */
@@ -169,14 +169,14 @@ button.searchBtn{
 .gnb_item:nth-child(5) a:hover{
     text-indent:-9999px;
     color:transparent;
-    background:url('./img/icon/header/gnbInfo.webp') no-repeat 0 -3px;
+    background:url('./img/icon/header/gnbInfo.png') no-repeat 0 -3px;
     background-size: 55px;
 }
 .gnb_item:nth-child(6) a:hover{
     text-indent:9999px;
     width:100px;
     color:transparent;
-    background:url('./img/icon/header/gnbTalk.webp') no-repeat 0 -3px;
+    background:url('./img/icon/header/gnbTalk.png') no-repeat 0 -3px;
     background-size: 40px;
 }
 

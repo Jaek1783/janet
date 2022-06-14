@@ -1,31 +1,31 @@
 import './App.css';
 import React from 'react';
 
-import MainImg01 from './img/event/main_01.webp';
-import MainImg02 from './img/event/main_02.webp';
-import MainImg03 from './img/event/main_03.webp';
-import MainImg04 from './img/event/main_04.webp';
+import MainImg01 from './img/event/main_01.png';
+import MainImg02 from './img/event/main_02.png';
+import MainImg03 from './img/event/main_03.png';
+import MainImg04 from './img/event/main_04.png';
 
-import magazine_icon01 from './img/magazine/info/magazine01.webp';
-import magazine_icon02 from './img/magazine/info/magazine02.webp';
-import magazine_icon03 from './img/magazine/info/magazine03.webp';
-import magazine_icon04 from './img/magazine/info/magazine04.webp';
+import magazine_icon01 from './img/magazine/info/magazine01.png';
+import magazine_icon02 from './img/magazine/info/magazine02.png';
+import magazine_icon03 from './img/magazine/info/magazine03.png';
+import magazine_icon04 from './img/magazine/info/magazine04.png';
 
-import scroll01 from './img/scroll/scroll01.webp';
-import scroll02 from './img/scroll/scroll02.webp';
-import scroll03 from './img/scroll/scroll03.webp';
-import scroll04 from './img/scroll/scroll04.webp';
-import scroll05 from './img/scroll/scroll05.webp';
-import scroll06 from './img/scroll/scroll06.webp';
+import scroll01 from './img/scroll/scroll01.png';
+import scroll02 from './img/scroll/scroll02.png';
+import scroll03 from './img/scroll/scroll03.png';
+import scroll04 from './img/scroll/scroll04.png';
+import scroll05 from './img/scroll/scroll05.png';
+import scroll06 from './img/scroll/scroll06.png';
 
-import keyword01 from './img/keyword/hotKeyword_02.webp';
-import keyword02 from './img/keyword/hotKeyword_03.webp';
-import keyword03 from './img/keyword/hotKeyword_04.webp';
-import keyword04 from './img/keyword/hotKeyword_05.webp';
-import keyword05 from './img/keyword/hotKeyword_06.webp';
-import keyword06 from './img/keyword/hotKeyword_07.webp';
-import keyword07 from './img/keyword/hotKeyword_08.webp';
-import keyword08 from './img/keyword/hotKeyword_09.webp';
+import keyword01 from './img/keyword/hotKeyword_01.png';
+import keyword02 from './img/keyword/hotKeyword_02.png';
+import keyword03 from './img/keyword/hotKeyword_03.png';
+import keyword04 from './img/keyword/hotKeyword_04.png';
+import keyword05 from './img/keyword/hotKeyword_05.png';
+import keyword06 from './img/keyword/hotKeyword_06.png';
+import keyword07 from './img/keyword/hotKeyword_07.png';
+import keyword08 from './img/keyword/hotKeyword_08.png';
 
 import Header from './header/Header';
 

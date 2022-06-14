@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import aca from './../img/icon/header/aca.webp';
-import commu from './../img/icon/header/commu.webp';
-import ai from './../img/icon/header/ai.webp';
+import aca from './../img/icon/header/aca.png';
+import commu from './../img/icon/header/commu.png';
+import ai from './../img/icon/header/ai.png';
 import Logo from './../img/logo/logo.png';
 import search from './../img/icon/header/searchBtn.png';
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-import hot from './../img/keyword/hot.webp'
+import hot from './../img/keyword/hot.png'
 
 const Keyword = (props)=> {
 
