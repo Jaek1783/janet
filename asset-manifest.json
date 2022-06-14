@@ -2,9 +2,9 @@
   "files": {
     "main.css": "/static/css/main.37d08326.css",
     "main.js": "/static/js/main.70de466e.js",
-    "static/media/main_01.webp": "./static/media/main_01.3956b8e5a1370a82cb45.webp",
-    "static/media/main_03.webp": "./static/media/main_03.a53017fec7ccf483f8b7.webp",
-    "static/media/hotKeyword_05.webp": "./static/media/hotKeyword_05.4d23231c12867a2faacd.webp",
+    "static/media/main_01.webp": "../static/media/main_01.3956b8e5a1370a82cb45.webp",
+    "static/media/main_03.webp": "../static/media/main_03.a53017fec7ccf483f8b7.webp",
+    "static/media/hotKeyword_05.webp": "../static/media/hotKeyword_05.4d23231c12867a2faacd.webp",
     "static/media/hotKeyword_03.webp": "./static/media/hotKeyword_03.9cbdfeff96d054a5885b.webp",
     "static/media/main_02.webp": "./static/media/main_02.8433c644ef29b0d1206b.webp",
     "static/media/hotKeyword_04.webp": "./static/media/hotKeyword_04.79e449027d745d9b0ab1.webp",
