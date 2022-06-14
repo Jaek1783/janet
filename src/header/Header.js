@@ -39,7 +39,6 @@ const Header = ()=> {
             <ul className="gnb">
             <li className='gnb_item '><button className='hamburgerBtn' onClick = {()=>{
                 toggle();
-                console.log(open);
             }}></button></li>
             <li className='gnb_item gnb_text'><a href="#">Top 100</a></li>
             <li className='gnb_item gnb_text'><a href="#">자격증정보</a></li>

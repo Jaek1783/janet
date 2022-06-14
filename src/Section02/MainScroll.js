@@ -8,7 +8,6 @@ const MainScroll = (props)=>{
     const ref = useRef(2);
     const nextBtn = ()=>{
         if(-1 < num+1 < 7){
-            console.log(ref.current.focus());
             const scrollBox = document.querySelector('.scrollBox');
             setNum(ref.current += 1);
             scrollBox.classList.add('transition');
