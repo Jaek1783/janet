@@ -1,10 +1,10 @@
 import './App.css';
 import React from 'react';
 
-import mainImg01 from './img/event/main_01.webp';
-import mainImg02 from './img/event/main_02.webp';
-import mainImg03 from './img/event/main_03.webp';
-import mainImg04 from './img/event/main_04.webp';
+import MainImg01 from './img/event/main_01.webp';
+import MainImg02 from './img/event/main_02.webp';
+import MainImg03 from './img/event/main_03.webp';
+import MainImg04 from './img/event/main_04.webp';
 
 import magazine_icon01 from './img/magazine/info/magazine01.webp';
 import magazine_icon02 from './img/magazine/info/magazine02.webp';
