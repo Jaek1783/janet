@@ -63,17 +63,17 @@ const Header = ()=> {
                 </ul>
             </div>
       </div>
-      <div className={open?"subGnb_container_none":"subGnb_container_block"}>
-            <ul className="subGnbBox">
+      <div className={open?"subGnb_container subGnb_container_none":"subGnb_container subGnb_container_block"}>
+            <ul className={open?"subGnbBox subGnbBox_none" : "subGnbBox subGnbBox_block"}>
                 {subGnb_items.map(item=>{
                     return(
-                        <li key={item.name} className="subGnb_item">
+                        <li key={item.name} className={open?"subGnb_item subGnb_item_none":"subGnb_item subGnb_item_block"}>
                             <p className="item_title">{item.name}</p>
                         </li>
                     )
                 })}
             </ul>
-        </div>
-        </div>
+      </div>
+    </div>
     )
 }; export default Header;

@@ -3,12 +3,10 @@
     margin:0;
 }
 .App{
-    width:1250px;
     margin:0 auto;
     font-size: 12px;
     font-family: 'noto sans kr';
     box-sizing: border-box;
-    /* padding-top:90px; */
 }
 img{
     width:100%;
@@ -26,11 +24,14 @@ a{
     padding-top:15px;
     border-bottom:1px solid #dfdfdf;
     position: relative;
+    z-index:999;
+    box-sizing: border-box;
 }
 .hd{
     width:1250px;
     margin:0 auto;
     height:55px;
+    box-sizing: border-box;
 }
 .logo{
     float: left;
@@ -201,35 +202,45 @@ button.searchBtn{
     text-indent: -9999px;
 }
 /* 하단 전체 페이지 스타일 */
-.subGnb_container_block{
+.subGnb_container{
     position: absolute;
     width: 100%;
-    top: 129px;
-    height:398px;
+    top: 145px;
     left: 0;
     background: #fff;
     border-top: 1px solid #dfdfdf;
-    border-bottom: 1px solid #dfdfdf;
-    z-index: 999;
+    z-index: 10;
+    transition : .3s ease-in-out;
+}
+.subGnb_container_block{
+    height:398px; 
 }
 .subGnb_container_none{
     height:0;
-    display:none;
-    top:0;
 }
 .subGnbBox{
-    background: #fff;
     width: 1250px;
-    height:398px;
     display: flex;
     margin:0 auto ;
+    transition: .3s ease-in-out;
+}
+.subGnbBox_block{
+    height:398px;
     border-left:1px solid #efefef;
+}
+.subGnbBox_none{
+    height:100%;
 }
 .subGnb_item{
     flex: 1;
     padding: 30px 29px;
     align-items: flex-start;
+}
+.subGnb_item_block{
     border-right: 1px solid #efefef;
+}
+.subGnb_item_none{
+    opacity: 0;
 }
 .item_title{
     font-size: 14px;
@@ -258,9 +269,11 @@ div.contents{
     position:relative;
 }
 .slides{
-    width:400%;
+    width:600%;
     display: flex;
     align-items: center;
+    position: relative;
+    transform:translateX(-400px);
 }
 .slide>img{
     width:400px;
@@ -268,8 +281,8 @@ div.contents{
 }
 .eventPage{
     position:absolute;
-    right:20px;
-    bottom:20px;
+    bottom:10px;
+    right:10px;
     color:#fff;
     font-size: 1.2em;
 
@@ -298,7 +311,7 @@ div.contents{
 .magazines{
     width:800%;
     display: flex;
-    margin-left:-490px ;
+    transform:translateX(-490px);
 }
 .magazine{
     width: 490px;
@@ -372,7 +385,7 @@ div.contents{
     padding:25px 0;
 }
 .top10_title{
-    font-size: 19.74px;
+    font-size: 1.41em;
     margin-left:15px;
 }
 .top10_item{
@@ -384,6 +397,11 @@ div.contents{
 }
 .top10s{
     position: relative;
+    overflow: hidden;
+}
+.top10{
+    transform:translateX(-200px);
+    display:flex;
 }
 .top10_num{
     width:20px;
@@ -422,7 +440,7 @@ div.contents{
 .scrollBox{
     display:flex;
     width:900%;
-    margin-left:-812px;
+    transform:translateX(-812px);
 }
 .scroll_item{
     width:386px;
@@ -447,81 +465,15 @@ div.contents{
 /* 키워드 스타일 */
 .section03{
     width:1250px;
-    height:700px;
+    /* height:1500px; */
     margin: 0 auto;
 }
-.hot_{
-    font-size: 28px;
-}
-.hot_icon{
-    display: inline-block;
-    width:30px;
-}
-.hot_hot{
-    color: #8f45ef;
-}
-.hot_top20{
-    font-weight: 500;
-}
+
 .key_container{
     display: flex;
     flex-wrap: wrap;
 }
-.key_item{
-    flex:1 1 20%;
-    width:300px;
-    height:190px;
-    position:relative;
-    margin:0 16px 16px 0;
-}
-.key_item:hover{
-    cursor: pointer
-}
-.key_item a{
-    position: absolute;
-    top: 0;
-    display: block;
-    width: 300px;
-    height: 190px;
-    box-sizing: border-box;
-    background: #fff;
-    border: 1px solid #e5e5e5;
-    overflow: hidden;
-    z-index: 1;
-    border-radius: 10px;
-}
-.key_item a:hover{
-    height: 395px;
-    border: 2px solid transparent;
-    background: linear-gradient(to right, white, white), linear-gradient(135deg, #add0ff, #bc8ff0);
-    background-clip: padding-box, border-box;
-    background-origin: padding-box, border-box;
-    z-index: 9;
-}
-.key_item:nth-child(1)>a>.keyImg{
-    background-color: #e9b107;
-}
-.key_item:nth-child(2)>a>.keyImg{
-    background-color: #4b3962;
-}
-.key_item:nth-child(3)>a>.keyImg{
-    background-color: #e16045;
-}
-.key_item:nth-child(4)>a>.keyImg{
-    background-color: #474756;
-}
-.key_item:nth-child(5)>a>.keyImg{
-    background-color: #474756;
-}
-.key_item:nth-child(6)>a>.keyImg{
-    background-color: #b13c2f;
-}
-.key_item:nth-child(7)>a>.keyImg{
-    background-color: #383f4e;
-}
-.key_item:nth-child(8)>a>.keyImg{
-    background-color: #cd9308;
-}
+
 .keyImg{
     width:300px;
     height:120px;
@@ -529,9 +481,6 @@ div.contents{
 }
 .keyImg>img{
     opacity: 0.2;
-}
-.key_item a:hover img{
-    opacity: 1;
 }
 .key_title{
     font-size: 1.65em;

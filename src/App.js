@@ -42,10 +42,12 @@ import Keyword from './Section03/Keyword';
 
 const App=()=> {
   const mainSlides = [
+    {id:0,img:MainImg04,alt:'메인슬라이드이미지04'},
     {id:1,img:MainImg01,alt:'메인슬라이드이미지01'},
     {id:2,img:MainImg02,alt:'메인슬라이드이미지02'},
     {id:3,img:MainImg03,alt:'메인슬라이드이미지03'},
     {id:4,img:MainImg04,alt:'메인슬라이드이미지04'},
+    {id:5,img:MainImg01,alt:'메인슬라이드이미지01'},
   ];
   const informations = [
     {name:'icon01',img:magazine_icon01,title:'자넷매거진',body:'다양한 자격증 \n매거진'},
@@ -54,13 +56,13 @@ const App=()=> {
     {name:'icon04',img:magazine_icon04,title:'공인중개사\n원서접수',body:'가장빠른 원서 \n접수 꿀팁'},
   ];
   const magazines = [
-    {id:0,title:'자격증 정보',contents:''},
+    {id:0,title:'자격증 정보',contents:<Magazine_info informations={informations}/>},
     {id:1,title:'자넷info',contents:<Magazine_info informations={informations}/>},
-    {id:2,title:'커뮤니티',contents:''},
-    {id:3,title:'추천',contents:''},
-    {id:4,title:'자넷톡',contents:''},
-    {id:5,title:'우리동네 학원은?',contents:''},
-    {id:6,title:'자격증 정보',contents:''},
+    {id:2,title:'커뮤니티',contents:<Magazine_info informations={informations}/>},
+    {id:3,title:'추천',contents:<Magazine_info informations={informations}/>},
+    {id:4,title:'자넷톡',contents:<Magazine_info informations={informations}/>},
+    {id:5,title:'우리동네 학원은?',contents:<Magazine_info informations={informations}/>},
+    {id:6,title:'자격증 정보',contents:<Magazine_info informations={informations}/>},
     {id:7,title:'자넷info',contents:<Magazine_info informations={informations}/>},
   ];
   const contents_top10_01 = [
@@ -75,8 +77,14 @@ const App=()=> {
     {id:9, name:'건설기계정비산업기사'},
     {id:10, name:'사출금형산업기사'},
   ];
-  const top10s = [
-    {title:'기사 인기순위',contents:<Top10_01 contents_top10_01={contents_top10_01}/>},
+  const top10s
+   = [
+    {id:1, title:'핫클릭 Top 10',contents:<Top10_01 contents_top10_01={contents_top10_01}/>},
+    {id:2,title:'기사 인기순위',contents:<Top10_01 contents_top10_01={contents_top10_01}/>},
+    {id:3,title:'기능장 인기순위',contents:<Top10_01 contents_top10_01={contents_top10_01}/>},
+    {id:4,title:'베스트 글 Top10',contents:<Top10_01 contents_top10_01={contents_top10_01}/>},
+    {id:5,title:'핫클릭 Top 10',contents:<Top10_01 contents_top10_01={contents_top10_01}/>},
+    {id:6,title:'기사 인기순위',contents:<Top10_01 contents_top10_01={contents_top10_01}/>},
   ];
   const contents = [
     {name:'MainEventSlides', body:<MainEventSlides mainSlides={mainSlides}/>},
@@ -100,7 +108,7 @@ const App=()=> {
       "id":1,
       "title":"토익(TOEIC)",
       "licenseOrgan":"미국 ETS",
-      "esRegdt":"2022-06-11",
+      "esRegdt":"2022-07-24",
       "img":keyword01
     },
     {
@@ -114,21 +122,21 @@ const App=()=> {
       "id":3,
       "title":"전기기사",
       "licenseOrgan":"한국산업인력공단",
-      "esRegdt":"2022-07-13",
+      "esRegdt":"2022-07-26",
       "img":keyword03
     },
     {
       "id":4,
       "title":"공인중개사",
       "licenseOrgan":"한국산업인력공단",
-      "esRegdt":"2022-07-13",
+      "esRegdt":"2022-07-15",
       "img":keyword04
     },
     {
       "id":5,
       "title":"산업안전기사",
       "licenseOrgan":"한국산업인력공단",
-      "esRegdt":"2022-07-13",
+      "esRegdt":"2022-07-11",
       "img":keyword05
     },
     {
@@ -147,6 +155,90 @@ const App=()=> {
     },
     {
       "id":8,
+      "title":"ITQ",
+      "licenseOrgan":"한국생산성본부",
+      "esRegdt":"2022-07-13",
+      "img":keyword08
+    },
+    {
+      "id":9,
+      "title":"토익(TOEIC)",
+      "licenseOrgan":"미국 ETS",
+      "esRegdt":"2022-07-11",
+      "img":keyword01
+    },
+    {
+      "id":10,
+      "title":"한국사능력검정시험",
+      "licenseOrgan":"국사편찬위원회",
+      "esRegdt":"2022-07-13",
+      "img":keyword02
+    },
+    {
+      "id":11,
+      "title":"전기기사",
+      "licenseOrgan":"한국산업인력공단",
+      "esRegdt":"2022-07-13",
+      "img":keyword03
+    },
+    {
+      "id":12,
+      "title":"공인중개사",
+      "licenseOrgan":"한국산업인력공단",
+      "esRegdt":"2022-07-13",
+      "img":keyword04
+    },
+    {
+      "id":13,
+      "title":"산업안전기사",
+      "licenseOrgan":"한국산업인력공단",
+      "esRegdt":"2022-07-13",
+      "img":keyword05
+    },
+    {
+      "id":14,
+      "title":"KBS한국어능력시험",
+      "licenseOrgan":"KBS 한국어진흥원",
+      "esRegdt":"2022-07-02",
+      "img":keyword06
+    },
+    {
+      "id":15,
+      "title":"요양보호사",
+      "licenseOrgan":"한국보건의료인국가시험원",
+      "esRegdt":"2022-08-06",
+      "img":keyword07
+    },
+    {
+      "id":16,
+      "title":"ITQ",
+      "licenseOrgan":"한국생산성본부",
+      "esRegdt":"2022-07-13",
+      "img":keyword08
+    },
+    {
+      "id":17,
+      "title":"산업안전기사",
+      "licenseOrgan":"한국산업인력공단",
+      "esRegdt":"2022-07-13",
+      "img":keyword05
+    },
+    {
+      "id":18,
+      "title":"KBS한국어능력시험",
+      "licenseOrgan":"KBS 한국어진흥원",
+      "esRegdt":"2022-07-02",
+      "img":keyword06
+    },
+    {
+      "id":19,
+      "title":"요양보호사",
+      "licenseOrgan":"한국보건의료인국가시험원",
+      "esRegdt":"2022-08-06",
+      "img":keyword07
+    },
+    {
+      "id":20,
       "title":"ITQ",
       "licenseOrgan":"한국생산성본부",
       "esRegdt":"2022-07-13",
