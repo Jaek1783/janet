@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d8701ede.css",
+    "main.js": "/static/js/main.17f6d434.js",
+    "static/media/hotKeyword_04.png": "/static/media/hotKeyword_04.6f0fe8cc677054d56412.png",
+    "static/media/main_01.png": "/static/media/main_01.c268af2de9486b78b57a.png",
+    "static/media/hotKeyword_03.png": "/static/media/hotKeyword_03.d7cbb526c7a75a40deb7.png",
+    "static/media/main_02.png": "/static/media/main_02.484f4192a640e6011fec.png",
+    "static/media/main_03.png": "/static/media/main_03.07a21dcef9116fcb99c9.png",
+    "static/media/hotKeyword_05.png": "/static/media/hotKeyword_05.4732aaad49d73a10c1b5.png",
+    "static/media/hotKeyword_02.png": "/static/media/hotKeyword_02.2c76cfcc9905a7397208.png",
+    "static/media/main_04.png": "/static/media/main_04.2612db4554607e86b07b.png",
+    "static/media/hotKeyword_01.png": "/static/media/hotKeyword_01.32ee93c4989e945d4f7f.png",
+    "static/media/hotKeyword_06.png": "/static/media/hotKeyword_06.6de54ea421abba57e4ae.png",
+    "static/media/hotKeyword_07.png": "/static/media/hotKeyword_07.a811445cafd91187fe6b.png",
+    "static/media/hotKeyword_08.png": "/static/media/hotKeyword_08.e6e0dd6ac628d0b0e94b.png",
+    "static/media/scroll04.png": "/static/media/scroll04.45a98842c779c81688d9.png",
+    "static/media/add.png": "/static/media/add.aefc581a3821ac1726df.png",
+    "static/media/scroll02.png": "/static/media/scroll02.5f9a817c93b63a6787ef.png",
+    "static/media/scroll03.png": "/static/media/scroll03.bcbe0dfbf763244f2786.png",
+    "static/media/scroll01.png": "/static/media/scroll01.bbe2bec59b432530560d.png",
+    "static/media/scroll05.png": "/static/media/scroll05.6c70d69ccf82e1c23f58.png",
+    "static/media/scroll06.png": "/static/media/scroll06.489a15dfcd28f28ccb83.png",
+    "index.html": "/index.html",
+    "main.d8701ede.css.map": "/static/css/main.d8701ede.css.map",
+    "main.17f6d434.js.map": "/static/js/main.17f6d434.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8701ede.css",
+    "static/js/main.17f6d434.js"
+  ]
+}
