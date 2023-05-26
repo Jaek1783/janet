@@ -14,7 +14,7 @@ const Keyword = (props)=> {
             </H1Styled>
             <ul className="key_container">
                 {props.keywords.map(key=>{
-                    const today = new Date();
+                    const today = new Date("2022-06-30");
                     const dday = new Date(key.esRegdt);
                     const gap = dday.getTime() - today.getTime();
                     const result = Math.ceil(gap / -(1000*60*60*24));

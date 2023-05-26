@@ -1,8 +1,8 @@
 import React,{useRef, useState} from "react";
 import prev from './../img/icon/prev.png';
 import next from './../img/icon/next.png';
-
-const Top10 = (props)=> {
+import Top10N01 from '../Section01/Top10_items/Top10_01';
+const Top10 = ({top10s, contents_top10_01})=> {
     const [num, setNum] = useState(1);
     const slideRef = useRef(null);
     const numRef = useRef(1);
@@ -39,12 +39,12 @@ const Top10 = (props)=> {
         <div className="top_container">
             <div className="top10s">
                 <div className="top10" ref={slideRef}>
-                    {props.top10s.map(top10=>{
+                    {top10s.map(top10=>{
                         return(
                             <div key={top10.id}>
                                 <h1 className="top10_title">{top10.title}</h1>
                                 <ul>
-                                    <li>{top10.contents}</li>
+                                    <li><Top10N01 contents_top10_01={contents_top10_01}/></li>
                                 </ul>
                             </div>
                         )

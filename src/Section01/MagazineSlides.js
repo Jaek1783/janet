@@ -2,7 +2,9 @@ import React,{useState, useRef} from "react";
 import prev from './../img/icon/prev.png';
 import next from './../img/icon/next.png';
 import add from './../img/magazine/add.png';
-const Magazine = (props)=>{
+
+import MagazineInfo from '../Section01/Magazine_items/Magazine_info';
+const Magazine = ({magazines, informations})=>{
     const [num, setNum] = useState(1);
     const numRef = useRef(1);
     const slideRef = useRef(null);
@@ -39,12 +41,12 @@ const Magazine = (props)=>{
         <div className='content02'>
             <div className="magazine_container">
                 <div  className="magazines" ref={slideRef}>
-                {props.magazines.map(magazine=>{
+                {magazines.map(magazine=>{
                     return(
                         <div key={magazine.id} className="magazine">
                             <h2>{magazine.title}</h2>
                             <div>
-                                {magazine.contents}
+                            <MagazineInfo informations={informations}/>
                             </div>
                         </div>
                     )

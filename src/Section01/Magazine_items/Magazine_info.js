@@ -1,9 +1,9 @@
 import React from "react";
 
-const Magazine_info = (props)=>{
+const Magazine_info = ({informations})=>{
     return(
         <div  className="info">
-            {props.informations.map(info=>{
+            {informations.map(info=>{
                 return(
                     <div key={info.name}  className="info_items">
                         <dl className="info_item">

@@ -31,9 +31,8 @@ import Header from './header/Header';
 
 import MainEventSlides from './Section01/MainEventSlides';
 import Magazine from './Section01/MagazineSlides';
-import Magazine_info from './Section01/Magazine_items/Magazine_info';
 import Top10 from './Section01/Top10';
-import Top10_01 from './Section01/Top10_items/Top10_01';
+
 import Section01 from './Section01/Section01';
 
 import MainScroll from './Section02/MainScroll';
@@ -56,14 +55,14 @@ const App=()=> {
     {name:'icon04',img:magazine_icon04,title:'공인중개사\n원서접수',body:'가장빠른 원서 \n접수 꿀팁'},
   ];
   const magazines = [
-    {id:0,title:'자격증 정보',contents:<Magazine_info informations={informations}/>},
-    {id:1,title:'자넷info',contents:<Magazine_info informations={informations}/>},
-    {id:2,title:'커뮤니티',contents:<Magazine_info informations={informations}/>},
-    {id:3,title:'추천',contents:<Magazine_info informations={informations}/>},
-    {id:4,title:'자넷톡',contents:<Magazine_info informations={informations}/>},
-    {id:5,title:'우리동네 학원은?',contents:<Magazine_info informations={informations}/>},
-    {id:6,title:'자격증 정보',contents:<Magazine_info informations={informations}/>},
-    {id:7,title:'자넷info',contents:<Magazine_info informations={informations}/>},
+    {id:0,title:'자격증 정보'},
+    {id:1,title:'자넷info'},
+    {id:2,title:'커뮤니티'},
+    {id:3,title:'추천'},
+    {id:4,title:'자넷톡'},
+    {id:5,title:'우리동네 학원은?'},
+    {id:6,title:'자격증 정보'},
+    {id:7,title:'자넷info'},
   ];
   const contents_top10_01 = [
     {id:1, name:'전기기사'},
@@ -79,17 +78,17 @@ const App=()=> {
   ];
   const top10s
    = [
-    {id:1, title:'핫클릭 Top 10',contents:<Top10_01 contents_top10_01={contents_top10_01}/>},
-    {id:2,title:'기사 인기순위',contents:<Top10_01 contents_top10_01={contents_top10_01}/>},
-    {id:3,title:'기능장 인기순위',contents:<Top10_01 contents_top10_01={contents_top10_01}/>},
-    {id:4,title:'베스트 글 Top10',contents:<Top10_01 contents_top10_01={contents_top10_01}/>},
-    {id:5,title:'핫클릭 Top 10',contents:<Top10_01 contents_top10_01={contents_top10_01}/>},
-    {id:6,title:'기사 인기순위',contents:<Top10_01 contents_top10_01={contents_top10_01}/>},
+    {id:1, title:'핫클릭 Top 10'},
+    {id:2,title:'기사 인기순위'},
+    {id:3,title:'기능장 인기순위'},
+    {id:4,title:'베스트 글 Top10'},
+    {id:5,title:'핫클릭 Top 10'},
+    {id:6,title:'기사 인기순위'},
   ];
   const contents = [
-    {name:'MainEventSlides', body:<MainEventSlides mainSlides={mainSlides}/>},
-    {name:'Magazine', body:<Magazine magazines={magazines}/>},
-    {name:'Top10', body:<Top10 top10s = {top10s}/>}
+    {name:'MainEventSlides', body:<MainEventSlides mainSlides={mainSlides} />},
+    {name:'Magazine', body:<Magazine magazines={magazines} informations={informations}/>},
+    {name:'Top10', body:<Top10 top10s = {top10s} contents_top10_01={contents_top10_01}/>}
   ];
   const scrollImgs = [
     {name:'scroll00',img:scroll05},
