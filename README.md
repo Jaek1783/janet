@@ -1,4 +1,6 @@
 # janet 메인 페이지 퍼블리싱
+## <img width="1421" alt="janet" src="https://github.com/Jaek1783/janet/assets/73649967/ebc55f9c-13a7-4dad-b4cd-d256ad4c31f1">
+
 ## 소개
 - 제작기간 2022.06.12 ~ 2022.06.19
 - 사용스킬
